@@ -1,4 +1,4 @@
-# Ikram Ul Haq — Personal Portfolio
+# Hassan Amir — Personal Portfolio
 
 Personal portfolio site hosted at [hassanamir.github.io](https://hassanamir.github.io).
 
