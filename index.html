@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Hassan Amir — Full Stack Developer</title>
+  <meta name="description"
+    content="Full Stack Developer with 2+ years of experience building scalable, real-world applications. Skilled in Python, JavaScript, C#, React, Node.js, and Azure, based in Finland.">
+  <meta name="keywords"
+    content="Hassan Amir, Full Stack Developer, React, Node.js, Python, C#, Azure, AI Automation, Finland">
+  <meta property="og:title" content="Hassan Amir — Full Stack Developer">
+  <meta property="og:description"
+    content="Full Stack Developer building scalable applications with React, Node.js, Python, C#, and Azure.">
+  <meta property="og:url" content="https://hassanamir454.github.io">
+  <meta property="og:type" content="website">
+
+  <!-- Favicons -->
+  <link href="assets/img/profile/hassan.jpg" rel="icon" type="image/jpeg">
+  <link href="assets/img/profile/hassan.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .skill-tag {
+      background: color-mix(in srgb, var(--accent-color), transparent 88%);
+      color: var(--accent-color);
+      border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 14px;
+    }
+
+    .tech-tag {
+      background: color-mix(in srgb, var(--accent-color), transparent 88%);
+      color: var(--accent-color);
+      border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%);
+      border-radius: 20px;
+      padding: 3px 11px;
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+
+    .project-company {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-color);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .open-to-box {
+      background: color-mix(in srgb, var(--accent-color), transparent 92%);
+      border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-top: 20px;
+    }
+
+    .open-to-box h5 {
+      color: var(--accent-color);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    .open-to-box .open-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .open-to-box .open-tag {
+      background: color-mix(in srgb, var(--accent-color), transparent 80%);
+      color: var(--accent-color);
+      border-radius: 20px;
+      padding: 4px 13px;
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: SnapFolio
+  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+  * Updated: Jun 13 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#projects"><i class="bi bi-grid navicon"></i> Projects</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://x.com/HassanAmir01" class="twitter" target="_blank" rel="noopener"><i
+            class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/in/hassan-amir-ba8b63382/" class="linkedin" target="_blank" rel="noopener"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/HassanAmir454" class="github" target="_blank" rel="noopener"><i
+            class="bi bi-github"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
+
+      <div class="hero-content">
+
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1>Hassan <span class="accent-text">Amir</span></h1>
+                <p class="lead">I'm a <span class="typed"
+                    data-typed-items="Full Stack Developer @ Peikko, AI Automation Engineer"></span></p>
+                <p class="description">Full Stack Developer with 2+ years of experience building scalable, real-world
+                  applications. Skilled in Python, JavaScript, C#, React, Node.js, and Azure, with hands-on expertise in
+                  AI chatbot automation and full-stack development.</p>
+
+                <div class="hero-actions">
+                  <a href="#projects" class="btn btn-primary">View My Work</a>
+                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+
+                <div class="social-links">
+                  <a href="https://github.com/HassanAmir454" target="_blank" rel="noopener"><i
+                      class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/hassan-amir-ba8b63382/" target="_blank" rel="noopener"><i
+                      class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="assets/img/profile/hassan.jpg" alt="Hassan Amir" class="profile-image">
+                  <div class="floating-elements">
+                    <div class="floating-icon icon-1"><i class="bi bi-robot"></i></div>
+                    <div class="floating-icon icon-2"><i class="bi bi-code-slash"></i></div>
+                    <div class="floating-icon icon-3"><i class="bi bi-cpu"></i></div>
+                    <div class="floating-icon icon-4"><i class="bi bi-graph-up"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-image">
+                  <img src="assets/img/profile/hassan.jpg" alt="Profile Image" class="img-fluid">
+                </div>
+                <div class="profile-badge">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+              </div>
+
+              <div class="profile-content">
+                <h3>Hassan Amir</h3>
+                <p class="profession">Full Stack Developer</p>
+
+                <div class="contact-links">
+                  <a href="mailto:hassanamir1degree@gmail.com" class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    hassanamir1degree@gmail.com
+                  </a>
+                  <a href="tel:+358449527076" class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    +358 44 952 7076
+                  </a>
+                  <a href="#" class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    Lahti, Finland
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-header">
+                <span class="badge-text">Get to Know Me</span>
+                <h2>Building Scalable Full-Stack Applications</h2>
+              </div>
+
+              <div class="description">
+                <p>Full Stack Developer with 2+ years of experience building scalable, real-world applications.
+                  Currently working at Peikko Finland Oy, developing cloud-based engineering platforms using C#
+                  (.NET/Blazor) and React with TypeScript.</p>
+
+                <p>Previously worked as an AI Automation Engineer at Kimbtron Oy, designing and orchestrating AI agents
+                  using n8n, integrating APIs, and implementing advanced chatbot logic for automated workflows.
+                  Experienced in delivering robust solutions with databases, DevOps practices, and modern software
+                  architectures.</p>
+
+                <p>Currently pursuing a Bachelor's in Industrial Information and Technology at LAB University of Applied
+                  Sciences. I love meeting new people — feel free to say hello!</p>
+              </div>
+
+              <div class="cta-section">
+                <a href="/assets/cv.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                  <i class="bi bi-download"></i>
+                  Download Resume
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                  <i class="bi bi-chat-dots"></i>
+                  Let's Talk
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="stats-wrapper">
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="150">
+                <div class="icon-wrapper">
+                  <i class="bi bi-briefcase"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Companies Worked At</p>
+              </div><!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-wrapper">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Projects Delivered</p>
+              </div><!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="250">
+                <div class="icon-wrapper">
+                  <i class="bi bi-calendar-check"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Years Experience</p>
+              </div><!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-wrapper">
+                  <i class="bi bi-globe"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Languages Spoken</p>
+              </div><!-- End Stats Item -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Technical skills developed across full-stack development, AI automation, and data analysis.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Frontend &amp; Backend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">.NET / Blazor</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">RESTful APIs</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>Data, AI &amp; DevOps</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">n8n</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">Matplotlib</span>
+                <span class="skill-tag">Seaborn</span>
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">Data Analysis</span>
+                <span class="skill-tag">Azure DevOps</span>
+                <span class="skill-tag">CI/CD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="pdf-container" style="min-height: 800px;">
+          <iframe src="assets/cv.pdf" style="width:100%; height:800px; border: none; border-radius: 10px;"
+            frameborder="0"></iframe>
+        </div>
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="services section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>A selection of full-stack applications and web development work.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-globe"></i>
+              </div>
+              <span class="project-company">FPFO · Sep 2025 – Present</span>
+              <h3>FPFO Website</h3>
+              <p>Developed and maintained the Finnish Pakistani Friendship Organization website with responsive design,
+                managing events, announcements, and digital content to support community engagement.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive Design</span>
+              </div>
+              <div class="mt-3">
+                <a href="https://fpfo.fi/" target="_blank" rel="noopener"
+                  style="color: var(--accent-color); font-size: 0.85rem; font-weight: 500;">
+                  <i class="bi bi-box-arrow-up-right"></i> Live Site
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <span class="project-company">Independent · Oct – Nov 2025</span>
+              <h3>AI Dashboard for CSV Data Analysis</h3>
+              <p>Built an interactive AI-powered dashboard for CSV data analysis featuring real-time dashboards, AI/ML
+                models integration, state management, and full-stack architecture.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">AI/ML</span>
+                <span class="tech-tag">CSV Data</span>
+                <span class="tech-tag">Dashboards</span>
+              </div>
+              <div class="mt-3">
+                <a href="https://react-dashboard09.netlify.app/" target="_blank" rel="noopener"
+                  style="color: var(--accent-color); font-size: 0.85rem; font-weight: 500;">
+                  <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                </a>
+                &nbsp;&nbsp;
+                <a href="https://github.com/HassanAmir454/react-dashboard" target="_blank" rel="noopener"
+                  style="color: var(--accent-color); font-size: 0.85rem; font-weight: 500;">
+                  <i class="bi bi-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Projects Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Areas where I can help you build scalable web applications and automate workflows.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">Full Stack <span>Development</span></a></h3>
+              <p>Building responsive, scalable web applications using React, Node.js, C#/.NET, and Python with modern
+                architectures.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">AI Chatbot <span>Automation</span></a></h3>
+              <p>Designing and orchestrating AI agents using n8n, integrating APIs, and implementing advanced chatbot
+                logic for automated workflows.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-cloud-arrow-up"></i>
+              </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">Azure Cloud <span>& DevOps</span></a></h3>
+              <p>CI/CD pipelines with Azure DevOps, cloud deployment, SQL database management, and scalable Microsoft
+                Azure environments.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-database"></i>
+              </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">API Design <span>& Integration</span></a></h3>
+              <p>RESTful API design and integration for BIM/FEM systems, enabling efficient processing of DWG, PDF, and
+                structured engineering data.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">Data Analysis <span>& Visualization</span></a></h3>
+              <p>Data analysis with Python, Pandas, NumPy, and visualization using Matplotlib and Seaborn for actionable
+                insights.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-globe"></i>
+              </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">Website <span>Development</span></a></h3>
+              <p>Creating responsive, modern websites with clean code, SEO best practices, and engaging digital
+                experiences.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section (hidden until content is available) -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Interested in working together on web applications, AI automation, or development projects? Let's talk.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-4 g-lg-5 justify-content-center">
+          <div class="col-lg-6">
+            <div class="info-box">
+              <h3>Contact Info</h3>
+              <p>Based in Finland. Open to freelance projects, collaboration, and full-stack development opportunities.
+              </p>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Location</h4>
+                  <p>Finland</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone</h4>
+                  <p>+358 44 952 7076</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email</h4>
+                  <p>hassanamir1degree@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <div class="content">
+                  <h4>LinkedIn</h4>
+                  <p><a href="https://www.linkedin.com/in/hassan-amir-ba8b63382/" target="_blank" rel="noopener"
+                      style="color: inherit;">linkedin.com/in/hassan-amir-ba8b63382</a></p>
+                </div>
+              </div>
+
+              <div class="open-to-box">
+                <h5>Open to</h5>
+                <div class="open-tags">
+                  <span class="open-tag">Freelance Projects</span>
+                  <span class="open-tag">Full-Stack Development</span>
+                  <span class="open-tag">AI Automation</span>
+                  <span class="open-tag">Collaboration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Hassan Amir</strong> <span>All Rights Reserved</span>
+        </p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
