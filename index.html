@@ -111,6 +111,97 @@
       font-size: 0.82rem;
       font-weight: 500;
     }
+
+    /* Projects grid - balanced 2x2 layout */
+    #projects .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    #projects .project-col {
+      display: flex;
+    }
+
+    #projects .project-col .service-card {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      #projects .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Resume section - CV download button + preview showcase */
+    .resume-cta {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .resume-cta .btn.btn-primary {
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 0.875rem 2rem;
+      border-radius: 0.75rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .resume-cta .btn.btn-primary:hover {
+      background-color: color-mix(in srgb, var(--accent-color), black 15%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 60%);
+    }
+
+    .cv-preview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .cv-preview .cv-preview-page {
+      display: block;
+      width: 100%;
+      max-width: 650px;
+      border-radius: 10px;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+      box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 88%);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .cv-preview .cv-preview-page:hover {
+      transform: translateY(-4px);
+    }
+
+    .cv-preview .cv-preview-page img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    @media (min-width: 992px) {
+      .cv-preview {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .cv-preview .cv-preview-page {
+        max-width: 45%;
+      }
+    }
   </style>
 
   <!-- =======================================================
@@ -423,9 +514,20 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="pdf-container" style="min-height: 800px;">
-          <iframe src="assets/cv.pdf" style="width:100%; height:800px; border: none; border-radius: 10px;"
-            frameborder="0"></iframe>
+        <div class="resume-cta">
+          <a href="assets/cv.pdf" download="Hassan_Amir_CV.pdf" class="btn btn-primary">
+            <i class="bi bi-download"></i>
+            Download CV
+          </a>
+        </div>
+
+        <div class="cv-preview">
+          <a href="assets/cv.pdf" target="_blank" rel="noopener" class="cv-preview-page">
+            <img src="assets/cv-preview-page1.png" alt="Hassan Amir CV page 1" loading="lazy">
+          </a>
+          <a href="assets/cv.pdf" target="_blank" rel="noopener" class="cv-preview-page">
+            <img src="assets/cv-preview-page2.png" alt="Hassan Amir CV page 2" loading="lazy">
+          </a>
         </div>
       </div>
 
@@ -440,9 +542,9 @@
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
+        <div class="projects-grid">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-col" data-aos="fade-up" data-aos-delay="100">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
                 <i class="bi bi-robot"></i>
@@ -477,7 +579,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-col" data-aos="fade-up" data-aos-delay="150">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
                 <i class="bi bi-cpu"></i>
@@ -514,7 +616,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-col" data-aos="fade-up" data-aos-delay="100">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
                 <i class="bi bi-globe"></i>
@@ -537,7 +639,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-col" data-aos="fade-up" data-aos-delay="200">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
                 <i class="bi bi-bar-chart-line"></i>
